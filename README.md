@@ -73,13 +73,17 @@ Configura las propiedades en `application.properties`:
 ```properties
 spring.application.name=AmadeusNodo
 spring.data.mongodb.uri=mongodb+srv://<usuario>:<contraseña>@<cluster-url>/<database>
-Ejecución
-Para ejecutar la aplicación:
+```
 
+## Ejecución
+
+Para ejecutar la aplicación:
+```
 bash
 ./gradlew bootRun
-Endpoints
-Usuarios
+```
+## Endpoints
+### Usuarios
 GET /users: Lista de todos los usuarios.
 
 GET /user/{id}: Usuario por ID.
@@ -88,7 +92,7 @@ POST /user: Crear usuario.
 
 DELETE /user/{id}: Eliminar usuario por ID.
 
-Respuestas
+### Respuestas
 GET /answers: Lista de todas las respuestas.
 
 GET /answer/{id}: Respuesta por ID.
@@ -97,16 +101,18 @@ POST /answer: Crear respuesta.
 
 DELETE /answer/{id}: Eliminar respuesta por ID.
 
-Destinos (MongoDB)
+### Destinos (MongoDB)
 GET /Destination: Lista de destinos (comentado en el controlador actual).
 
-Pruebas
+## Pruebas
 Para ejecutar las pruebas:
-
+```
 bash
 ./gradlew test
-Contribuciones
+```
+
+## Contribuciones
 Haz un fork del repositorio, crea una rama con tu feature y envía un pull request.
 
-Licencia
+## Licencia
 Este proyecto está licenciado bajo los términos de la MIT License.
